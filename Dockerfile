@@ -11,7 +11,7 @@ RUN echo "Installing system libraries..."
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y software-properties-common build-essential apt-utils wget curl tar git && \
-    apt-get install -y gdal-bin gdal-data libgdal-perl libgdal-dev python3-gdal && \
+    apt-get install -y gdal-bin gdal-data libgdal-dev python3-gdal && \
     apt-get autoclean -y && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
