@@ -6,6 +6,6 @@ tqdm
 numpy
 pandas
 Pillow
-gdal
+gdal==3.6.2
 geojson
 rasterio
