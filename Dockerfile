@@ -24,7 +24,7 @@ RUN wget -O azcopy_v10.tar.gz https://aka.ms/downloadazcopy-v10-linux && \
 
 RUN echo "Creating python environment..."
 RUN python3.8 -m venv /root/venv_py38
-ENV PATH=/root/venv_py38:$PATH
+ENV PATH=/root/venv_py38/bin:$PATH
 RUN export GDAL_VERSION=$(gdal-config --version) && \
     pip install -U pip && \
     pip install -r requirements.txt
