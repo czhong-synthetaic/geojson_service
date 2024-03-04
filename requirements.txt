@@ -6,6 +6,7 @@ tqdm
 numpy
 pandas
 Pillow
-gdal==$(gdal-config --version) 
+
 geojson
+gdal==${GDAL_VERSION}
 rasterio
