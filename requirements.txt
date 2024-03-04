@@ -1,0 +1,11 @@
+wheel
+setuptools
+cython
+tqdm
+
+numpy
+pandas
+Pillow
+gdal
+geojson
+rasterio
