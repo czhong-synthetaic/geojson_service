@@ -243,7 +243,7 @@ def main(
         except BaseException as e:
             # failed_maps.append(src_path)
             failed_maps.append(reference_key)
-            print(f"Encounted error on element {k} {src_path}:\n\n {str(e)}\n\n, skipping")
+            print(f"Encounted error {e}\nOn element {k} {src_path}:\n\n {str(e)}\n\n, skipping")
             # break
 
     failed_maps = np.unique(failed_maps)

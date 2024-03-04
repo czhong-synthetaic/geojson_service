@@ -4,7 +4,7 @@
 # Ubuntu 22.04
 FROM python:3.8.18-slim-bookworm
 
-WORKDIR /root/
+WORKDIR /root/app/
 COPY . .
 
 RUN echo "Installing system libraries..."
